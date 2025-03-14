@@ -13,7 +13,7 @@ export default function Home() {
         className="rounded-full size-16"
       />
       <h1 className="text-5xl font-bold tracking-tighter">
-        Programmer. Writer. Pianist.
+        Programmers. Writer. Pianist.
       </h1>
       <p className="mt-6 text-base text-zinc-600">
         Hey, I'm Steven. I'm the founder and CEO of{" "}
