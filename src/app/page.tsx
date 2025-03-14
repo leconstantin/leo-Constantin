@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { GitHubIcon, LinkedInIcon, TwitterIcon } from "@/components/icons/social";
 import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="mx-5 sm:mx-0 flex flex-col space-y-5 max-w-xl">
