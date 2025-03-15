@@ -1,4 +1,4 @@
-import {  formatDate } from "@/lib/utils";
+import { formatDate } from "@/lib/utils";
 import { allAuthors, allPosts } from "contentlayer/generated";
 import { ArrowLeft } from "lucide-react";
 import { Metadata } from "next";
@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Mdx } from "../_components/mdx-components";
+import NewsletterForm from "../_components/NewsletterForm ";
 
 export async function generateMetadata({
   params,
@@ -60,78 +61,43 @@ export default async function PostPage({
     allAuthors.find(({ slug }) => slug === `/authors/${author}`)
   );
   return (
-    <article className="relative max-w-2xl mx-auto py-6 lg:py-10">
-      <Link
-        href="/blog"
-        className={
-         
-          "absolute left-[-200px] top-14 hidden xl:inline-flex group  h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition lg:absolute lg:-left-5 xl:-top-1.5 xl:left-[-100px] xl:mt-0"
-        }
-      >
-        <span className="sr-only">Back to blog</span>
-
-        <ArrowLeft className="h-4 w-4 stroke-zinc-500 transition group-hover:stroke-zinc-700" />
-      </Link>
-     
-      <div>
-        {post.date && (
-          <time
-            dateTime={post.date}
-            className="block text-sm text-zinc-600"
-          >
-            Published on {formatDate(post.date)}
-          </time>
-        )}
-        <h1 className="mt-2 inline-block font-heading text-4xl leading-tight lg:text-5xl">
-          {post.title}
-        </h1>
-        {authors?.length ? (
-          <div className="mt-4 flex space-x-4">
-            {authors.map((author) =>
-              author ? (
-                <Link
-                  key={author._id}
-                  href={`https://twitter.com/${author.twitter}`}
-                  className="flex items-center space-x-2 text-sm"
-                >
-                  <Image
-                    src={author.avatar}
-                    alt={author.title}
-                    width={42}
-                    height={42}
-                    className="rounded-full bg-white"
-                  />
-                  <div className="flex-1 text-left leading-tight">
-                    <p className="font-medium">{author.title}</p>
-                    <p className="text-[12px] text-muted-foreground">
-                      @{author.twitter}
-                    </p>
-                  </div>
-                </Link>
-              ) : null
-            )}
-          </div>
-        ) : null}
-      </div>
-      {post.image && (
-        <Image
-          src={post.image}
-          alt={post.title}
-          width={720}
-          height={405}
-          className="my-8 rounded-md border bg-muted transition-colors"
-          priority
-        />
-      )}
-      <Mdx code={post.body.code} />
-      <hr className="mt-12" />
-      <div className="flex justify-center py-6 lg:py-10">
-        <Link href="/blog" className="flex items-center gap-2 group">
-          {/* <Icons.chevronLeft className="mr-2 h-4 w-4" /> */}
+    <div className="lg:relative">
+      <div className="mx-auto max-w-2xl mb-20">
+        <Link
+          href="/blog"
+          className="group ml-5 sm:ml-0 mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition lg:absolute lg:-left-5 lg:mb-0 lg:-mt-2 xl:-top-1.5 xl:left-0 xl:mt-0"
+        >
+          <span className="sr-only">Back to blog</span>
           <ArrowLeft className="h-4 w-4 stroke-zinc-500 transition group-hover:stroke-zinc-700" />
-          See all posts
         </Link>
+        <div className="mx-4 lg:mx-0">
+          <div className="mx-5 sm:mx-auto flex flex-col">
+            <h1 className="mt-6 text-4xl tracking-tighter font-bold text-zinc-800 sm:text-5xl">
+              {post.title}
+            </h1>
+            <time
+              dateTime={post.date}
+              className="order-first flex items-center text-base text-zinc-500"
+            >
+              <span className="h-4 w-0.5 rounded-full bg-zinc-200" />
+              <span className="ml-3">{formatDate(post.date)}</span>
+            </time>
+          </div>
+          {post.image && (
+            <Image
+              src={post.image}
+              alt={post.title}
+              width={720}
+              height={405}
+              className="my-8 rounded-md border bg-muted transition-colors"
+              priority
+            />
+          )}
+         
+          <Mdx code={post.body.code} />
+        </div>
+        <NewsletterForm />
       </div>
-    </article>
+    </div>
   );
 }
