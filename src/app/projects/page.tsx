@@ -4,47 +4,47 @@ import Image from "next/image";
 
 const projects = [
   {
-    name: "Dub",
+    name: "My@engine",
     description:
-      "Link management for modern marketing teams. 6K stars on GitHub, 5.2K users.",
-    link: { href: "https://dub.co", label: "dub.co" },
-    logo: "/vercel.ico",
+      " Web search engine that would help you to find information on the internet easy and quick.",
+    link: { href: "https://myengine.vercel.app/", label: "my@eng.app" },
+    logo: "/engine.ico",
   },
   {
-    name: "DomainsGPT",
+    name: "Travel@any",
     description:
-      "Generate brandable & memorable domain names using AI. Over 280K names generated.",
-    link: { href: "https://domainsg.pt", label: "domainsg.pt" },
-    logo: "/vercel.ico",
+      "The platform which guide users on outdoor adventures, particularly for hikers and climbers.",
+    link: { href: "https://travel-xi-nine.vercel.app/", label: "travel.anywhere" },
+    logo: "/Travel.ico",
 
   },
   {
-    name: "ShareGPT",
+    name: "Mdx@Content",
     description:
-      "Share your wildest ChatGPT conversations with 1 click. Used by Google to train Bard.",
-    link: { href: "https://sharegpt.com", label: "sharegpt.com" },
+      "Learn how to handle your mdx content through an opensource contentlayer2 project.",
+    link: { href: "https://ui-contentlayer2-nextjs.vercel.app/", label: "contentlayer2.learn" },
     logo: "/vercel.ico",
   },
   {
-    name: "One Word Domains",
+    name: "Learn Nextjs",
     description:
-      "Database of 1.2M+ available one-word domains for your startup.",
-    link: { href: "https://oneword.domains", label: "oneword.domains" },
-    logo: "/vercel.ico",
+      "Learn nextjs approuter through rebuilding this opensource project.",
+    link: { href: "https://app-router-nextjs-iota.vercel.app/", label: "nextjs.learn" },
+    logo: "/nextjs.ico",
   },
   {
-    name: "Extrapolate",
-    description: "See how well you age with AI. Over 36K photos generated.",
-    link: { href: "https://extrapolate.app", label: "extrapolate.app" },
-    logo: "/vercel.ico",
+    name: "Rathon",
+    description: "A full-service agency specializing in website and software design, development, and hosting.",
+    link: { href: "https://rathon.vercel.app/", label: "rathon.app" },
+    logo: "/rathon.ico",
 
   },
   {
-    name: "Precedent",
+    name: "Socially",
     description:
-      "An opinionated collection of components, hooks, and utilities for your Next.js project.",
-    link: { href: "https://precedent.dev", label: "precedent.dev" },
-    logo: "/vercel.ico",
+      "Modern social media platform which allows you to share your thoughts and connect with others.",
+    link: { href: "https://socially-sigma-taupe.vercel.app/", label: "socially.app" },
+    logo: "/Socially.ico",
 
   },
 ];

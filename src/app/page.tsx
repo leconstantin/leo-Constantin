@@ -13,38 +13,39 @@ export default function Home() {
         className="rounded-full size-16"
       />
       <h1 className="text-5xl font-bold tracking-tighter">
-        Programmer. Writer. Pianist.
+        Programmer. Writer. Player.
       </h1>
       <p className="mt-6 text-base text-zinc-600">
-        Hey, I'm Steven. I'm the founder and CEO of{" "}
+        Hey, I'm Constantin. I'm the founder and CEO of{" "}
         <a
           href="https://dub.co"
           target="_blank"
           className="underline underline-offset-4 text-zinc-800 font-semibold"
         >
-          Dub
+          Rathon
         </a>{" "}
-        – the open source link management infrastructure for modern marketing
-        teams.
+        – a full-service agency specializing in website and software design, development, and hosting.
       </p>
 
       <p className="mt-6 text-base text-zinc-600">
-        Previously, I helped build the future of the web at{" "}
-        <a
-          href="https://vercel.com/"
-          target="_blank"
-          className="underline underline-offset-4 text-zinc-800 font-semibold"
-        >
-          Vercel
-        </a>{" "}
-        . I also created projects like{" "}
+        In my daily programming activities i use different languages and frameworks to create well designed and functional softwares.{" "}
+       {" "}
+        But am likely to use{" "}
         <a
           href="https://sharegpt.com"
           target="_blank"
           className="underline underline-offset-4 text-zinc-800 font-semibold"
         >
-          ShareGPT
+          Nextjs
         </a>
+        ,{" "}
+        <a
+          href="https://sharegpt.com"
+          target="_blank"
+          className="underline underline-offset-4 text-zinc-800 font-semibold"
+        >
+          Typescript
+          </a>
         ,{" "}
         <a
           href="https://novel.sh/"
@@ -52,7 +53,7 @@ export default function Home() {
           rel="noreferrer noopener"
           className="underline underline-offset-4 text-zinc-800 font-semibold"
         >
-          Novel
+          Prisma
         </a>
         , and{" "}
         <a
@@ -60,19 +61,19 @@ export default function Home() {
           target="_blank"
           className="underline underline-offset-4 text-zinc-800 font-semibold"
         >
-          One Word Domains
+          Postgress
         </a>
         .
       </p>
       <div className="mt-6 flex gap-6">
-        <a href="https://twitter.com/steventey" target="_blank">
+        <a href="https://x.com/le_con82546" target="_blank">
           <TwitterIcon className="h-6 w-6 hover:scale-105 transition-all" />
         </a>
-        <a href="https://github.com/steven-tey" target="_blank">
+        <a href="https://github.com/leconstantin" target="_blank">
           <GitHubIcon className="h-6 w-6 hover:scale-105 transition-all" />
         </a>
         <a
-          href="https://linkedin.com/in/steventey"
+          href="www.linkedin.com/in/leoconstantin"
           target="_blank"
           rel="noreferrer noopener"
         >

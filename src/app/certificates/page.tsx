@@ -6,7 +6,7 @@ export default function CertificateList() {
     <div className="max-w-2xl lg:max-w-6xl mx-5 sm:mx-0">
       {certificates.map((certificate, index) => (
         <div className="mb-7 mt-20" key={index}>
-          <h2 className="text-base font-bold text-muted-foreground mb-3 tracking-tight">
+          <h2 className="text-xl font-bold mb-12 tracking-tight">
             {certificate.category}
           </h2>
           {certificate.certificates.map((item, i) => (
