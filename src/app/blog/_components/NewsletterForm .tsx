@@ -2,15 +2,25 @@
 
 import Script from "next/script";
 
+declare global {
+  interface Window {
+    Tally: any; // Declare Tally on the global window object (since it's loaded dynamically)
+    }
+  }
+
 export default function NewsletterForm() {
   return (
     <>
-      <Script
+     
+      {/* Load the Tally embed script using the next/script component */}
+       <Script
         id="tally-js"
         src="https://tally.so/widgets/embed.js"
         onReady={() => {
-          // @ts-ignore
-          Tally.loadEmbeds();
+          // Ensure Tally is available before calling Tally.loadEmbeds()
+          if (typeof window.Tally !== 'undefined') {
+            window.Tally.loadEmbeds();
+          }
         }}
       />
       <div className="mt-10 border-t border-gray-200">
