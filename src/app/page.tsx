@@ -18,7 +18,7 @@ export default function Home() {
       <p className="mt-6 text-base text-zinc-600">
         Hey, I'm Constantin. I'm the founder and CEO of{" "}
         <a
-          href="https://dub.co"
+          href="https://rathon.vercel.app/"
           target="_blank"
           className="underline underline-offset-4 text-zinc-800 font-semibold"
         >
@@ -32,7 +32,7 @@ export default function Home() {
        {" "}
         But am likely to use{" "}
         <a
-          href="https://sharegpt.com"
+          href="https://nextjs.org/"
           target="_blank"
           className="underline underline-offset-4 text-zinc-800 font-semibold"
         >
@@ -40,7 +40,7 @@ export default function Home() {
         </a>
         ,{" "}
         <a
-          href="https://sharegpt.com"
+          href="https://www.typescriptlang.org/"
           target="_blank"
           className="underline underline-offset-4 text-zinc-800 font-semibold"
         >
@@ -48,7 +48,7 @@ export default function Home() {
           </a>
         ,{" "}
         <a
-          href="https://novel.sh/"
+          href="https://www.prisma.io/"
           target="_blank"
           rel="noreferrer noopener"
           className="underline underline-offset-4 text-zinc-800 font-semibold"
@@ -57,7 +57,7 @@ export default function Home() {
         </a>
         , and{" "}
         <a
-          href="https://oneword.domains"
+          href="https://www.postgresql.org/"
           target="_blank"
           className="underline underline-offset-4 text-zinc-800 font-semibold"
         >
