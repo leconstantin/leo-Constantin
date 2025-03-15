@@ -123,10 +123,9 @@ export default async function PostPage({
               priority
             />
           )}
+          <Mdx code={post.body.code} />
+          <NewsletterForm />
         </div>
-        <Mdx code={post.body.code} />
-      <NewsletterForm />
-
       </div>
     </div>
     // </div>

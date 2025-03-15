@@ -72,7 +72,7 @@ export default function MobileNav() {
 const MenuToggle = ({ toggle }: { toggle: any }) => (
     <button
       onClick={toggle}
-      className="pointer-events-auto absolute top-8 right-6"
+      className="pointer-events-auto absolute top-8 right-10"
     >
       <span className="sr-only">Open Menu</span>
       <svg width="23" height="23" viewBox="0 0 23 23">
